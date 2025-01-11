@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DivineFitStudio</title>
+
+  <!-- Font Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Icone FontAwesome (se serve) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <style>
+    /* Stile di base */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    /* Header */
+    header {
+      background-color: #f1f1f1; /* Bianco grigiastro per il contrasto */
+      color: #333; /* Colore testo scuro per contrasto con lo sfondo */
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    /* Centrare il logo */
+    header .logo {
+      display: flex;
+      justify-content: center; /* Centra orizzontalmente */
+      align-items: center;
+    }
+
+    header .logo img {
+      max-width: 150px; /* Imposta una larghezza massima per il logo */
+    }
+
+    header nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    header nav ul li {
+      display: inline;
+      margin: 0 20px;
+    }
+
+    header nav ul li a {
+      color: #E6C068; /* Colore oro per il testo del menu */
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* Sezione Home */
+    #home {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    #home h1 {
+      font-size: 40px;
+      color: #333;
+    }
+
+    #home p {
+      font-size: 20px;
+      color: #333;
+    }
+
+    /* Immagine sotto il testo */
+    #home img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 30px auto;
+    }
+
+    /* Servizi */
+    #servizi {
+      padding: 60px 20px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    #servizi h2 {
+      font-size: 32px;
+      color: #E6C068; /* Oro per i titoli */
+    }
+
+    #servizi ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 18px;
+      text-align: left;
+      margin: 0 auto;
+      display: inline-block;
+    }
+
+    #servizi ul li {
+      margin-bottom: 10px;
+    }
+
+    /* Calendario */
+    #calendario {
+      background-color: #fff; /* Sfondo bianco */
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    #calendario iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 500px;
+      border: none;
+      margin: 0 auto;
+    }
+
+    /* Instagram */
+    #instagram {
+      text-align: center;
+    }
+
+    #instagram a {
+      color: #333;
+      font-size: 18px; /* Stesso stile della mail e telefono */
+      text-decoration: none;
+    }
+
+    #instagram a:hover {
+      color: #E6C068; /* Colore oro al passaggio del mouse */
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Contatti */
+    #contatti {
+      padding: 60px 20px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    #contatti h2 {
+      font-size: 32px;
+      color: #E6C068; /* Oro per i titoli */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header nav ul {
+        text-align: center;
+      }
+
+      header nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <!-- Logo -->
+      <img src="https://i.ibb.co/F3tSM9q/logo.png" alt="DivineFitStudio">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#servizi">Servizi</a></li>
+        <li><a href="#calendario">Calendario</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home">
+    <h1>DivineFitStudio</h1>
+    <p>Il tuo studio di Personal Training e Corsi Small Group a Bolzano.</p>
+    <!-- Immagine sotto il testo -->
+    <img src="https://i.ibb.co/0tn6B1B/hero-image.jpg" alt="Immagine di copertura">
+  </section>
+
+  <!-- Servizi -->
+  <section id="servizi">
+    <h2>Servizi Offerti</h2>
+    <ul>
+      <li><strong>Personal Training:</strong> Anamnesi conoscitiva, programma cucito su misura in base a obbiettivi e problematiche.</li>
+      <li><strong>Corsi/Small Group:</strong> Pilates, Animal Flow, Functional, ecc. 
+      .</li>
+      <li><strong>Programmi Personalizzati:</strong> Allenamenti e diete su misura per te.</li>
+    </ul>
+  </section>
+
+  <!-- Calendario -->
+  <section id="calendario">
+    <h2>Calendario Prenotazioni</h2>
+    <iframe src="https://calendar.google.com/calendar/embed?src=divinefitstudio%40gmail.com&ctz=Europe%2FRome" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  </section>
+
+  <!-- Instagram -->
+  <section id="instagram">
+    <h3>Seguici su Instagram</h3>
+    <p><a href="https://www.instagram.com/divinefitstudio" target="_blank">Instagram @divinefitstudio</a></p>
+  </section>
+
+  <!-- Contatti -->
+  <section id="contatti">
+    <h2>Contatti</h2>
+    <p>Email: divinefitstudio@gmail.com</p>
+    <p>Telefono: +39 3932011187</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 DivineFitStudio - Tutti i diritti riservati.</p>
+  </footer>
+
+</body>
+</html>

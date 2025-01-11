@@ -1,0 +1,182 @@
+/* Impostazioni di base */
+body {
+  font-family: 'Playfair Display', serif; /* Usa Playfair Display per il corpo del testo */
+  background-color: #fff; /* Sfondo bianco */
+  color: #333; /* Testo scuro */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+/* Header */
+header {
+  background-color: #000; /* Nero */
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+header .logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #E6C068; /* Oro */
+  font-family: 'Montserrat', sans-serif; /* Usa Montserrat per i link */
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #fff; /* Cambia colore al passaggio del mouse */
+}
+
+/* Sezione Hero */
+.hero-section {
+  background-color: #f2f2f2;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero-section h2 {
+  font-family: 'Montserrat', sans-serif; /* Usa Montserrat per i titoli */
+  font-size: 48px;
+  color: #000;
+}
+
+.hero-section p {
+  font-family: 'Playfair Display', serif; /* Usa Playfair Display per il testo normale */
+  font-size: 22px;
+  color: #333;
+}
+
+.cta-button {
+  background-color: #E6C068;
+  color: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #fff;
+  color: #E6C068;
+}
+
+/* Servizi */
+.services-section {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.services-section h2 {
+  font-family: 'Montserrat', sans-serif; /* Usa Montserrat per i titoli */
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+}
+
+.service {
+  margin-bottom: 40px;
+}
+
+.service h3 {
+  font-family: 'Montserrat', sans-serif; /* Usa Montserrat per i titoli */
+  font-size: 24px;
+  color: #E6C068; /* Oro */
+}
+
+.service ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.service ul li {
+  font-size: 18px;
+  margin: 5px 0;
+  font-family: 'Playfair Display', serif; /* Usa Playfair Display per il testo normale */
+}
+
+/* Sezione Prenotazioni */
+.calendar-section {
+  padding: 50px 0;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+/* Sezione Newsletter */
+.newsletter-section {
+  padding: 50px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.newsletter-section form input,
+.newsletter-section form button {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.newsletter-section form input {
+  width: 250px;
+  margin-right: 10px;
+}
+
+.newsletter-section form button {
+  background-color: #E6C068;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.newsletter-section form button:hover {
+  background-color: #fff;
+  color: #E6C068;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+/* Instagram */
+#instagram {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#instagram h3 {
+  font-size: 24px;
+  color: #E6C068; /* Colore oro per il titolo */
+  margin-bottom: 10px;
+}
+
+#instagram p {
+  font-size: 16px;
+}
+
+#instagram a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
