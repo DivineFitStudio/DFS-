@@ -206,3 +206,11 @@ footer {
   font-weight: bold;
 }
 
+.language-selector {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #E6C068; /* Colore oro */
+  padding: 8px 12px;
+  border-radius: 8px;
+}
