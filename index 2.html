@@ -1,30 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Untitled</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DivineFitStudio</title>
-  <!-- Favicon: aggiungi questa riga nel tag <head> -->
   <link rel="icon" type="image/png" href="https://i.ibb.co/Smv7gDL/logo.png">
-
-  <!-- Font Google -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Icone FontAwesome (se serve) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
   <style>
-    /* Stile di base */
     body {
       font-family: 'Montserrat', sans-serif;
       margin: 0;
@@ -32,66 +16,51 @@
       background-color: #f9f9f9;
       color: #333;
     }
-
     h1, h2 {
       font-family: 'Playfair Display', serif;
       font-weight: 700;
       margin-bottom: 20px;
     }
-
-    /* Header */
     header {
-      background-color: #f1f1f1; /* Bianco grigiastro per il contrasto */
-      color: #333; /* Colore testo scuro per contrasto con lo sfondo */
+      background-color: #f1f1f1;
+      color: #333;
       padding: 20px 0;
       text-align: center;
     }
-
-    /* Centrare il logo */
     header .logo {
       display: flex;
-      justify-content: center; /* Centra orizzontalmente */
+      justify-content: center;
       align-items: center;
     }
-
     header .logo img {
-      max-width: 150px; /* Imposta una larghezza massima per il logo */
+      max-width: 150px;
     }
-
     header nav ul {
       list-style: none;
       padding: 0;
     }
-
     header nav ul li {
       display: inline;
       margin: 0 20px;
     }
-
     header nav ul li a {
-      color: #E6C068; /* Colore oro per il testo del menu */
+      color: #E6C068;
       text-decoration: none;
       font-weight: bold;
       font-size: 18px;
     }
-
-    /* Sezione Home */
     #home {
       text-align: center;
       padding: 60px 20px;
     }
-
     #home h1 {
       font-size: 40px;
       color: #333;
     }
-
     #home p {
       font-size: 20px;
       color: #333;
     }
-
-    /* Immagine sotto il testo */
     #home img {
       width: 100%;
       max-width: 100%;
@@ -99,19 +68,15 @@
       display: block;
       margin: 30px auto;
     }
-
-    /* Servizi */
     #servizi {
       padding: 60px 20px;
       background-color: #fff;
       text-align: center;
     }
-
     #servizi h2 {
       font-size: 32px;
-      color: #E6C068; /* Oro per i titoli */
+      color: #E6C068;
     }
-
     #servizi ul {
       list-style-type: none;
       padding: 0;
@@ -120,83 +85,90 @@
       margin: 0 auto;
       display: inline-block;
     }
-
     #servizi ul li {
       margin-bottom: 10px;
     }
-
-    /* Calendario */
     #calendario {
-      background-color: #fff; /* Sfondo bianco */
+      background-color: #fff;
       padding: 40px 20px;
       text-align: center;
     }
-
-
-    /* Instagram */
     #instagram {
       text-align: center;
     }
-
     #instagram a {
       color: #333;
-      font-size: 18px; /* Stesso stile della mail e telefono */
+      font-size: 18px;
       text-decoration: none;
     }
-
     #instagram a:hover {
-      color: #E6C068; /* Colore oro al passaggio del mouse */
+      color: #E6C068;
     }
-
-    /* Footer */
     footer {
       background-color: #333;
       color: white;
       padding: 20px;
       text-align: center;
     }
-
     footer p {
       margin: 0;
     }
-
-    /* Contatti */
     #contatti {
       padding: 60px 20px;
       background-color: #fff;
       text-align: center;
     }
-
     #contatti h2 {
       font-size: 32px;
-      color: #E6C068; /* Oro per i titoli */
+      color: #E6C068;
     }
-
-    /* Responsive Design */
     @media (max-width: 768px) {
       header nav ul {
         text-align: center;
       }
-
       header nav ul li {
         display: block;
         margin: 10px 0;
       }
     }
-  </style>
 
+    /* Cookie banner */
+    #cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #f1f1f1;
+      color: #333;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+      z-index: 9999;
+      display: none;
+    }
+
+    #cookie-banner a {
+      color: #E6C068;
+      text-decoration: underline;
+    }
+
+    #cookie-banner button {
+      background-color: #E6C068;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      margin-left: 15px;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Header -->
   <header>
-
-
-
     <div class="logo">
-      <!-- Logo -->
-      <img src="https://i.ibb.co/vq6wpyR/logo-2.png
-" alt="DivineFitStudio">
+      <img src="https://i.ibb.co/vq6wpyR/logo-2.png" alt="DivineFitStudio">
     </div>
     <nav>
       <ul>
@@ -204,98 +176,86 @@
         <li><a href="#servizi">Servizi</a></li>
         <li><a href="#calendario">Calendario</a></li>
         <li><a href="#contatti">Contatti</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Home -->
   <section id="home">
     <h1>DivineFitStudio</h1>
     <p>Studio di Personal Training e Small Group in Centro a Bolzano.</p>
-    <!-- Immagine sotto il testo -->
     <img src="https://i.ibb.co/W5P3Qs5/foto-website.png" alt="foto-website">
   </section>
-<section id="our-mission" style="background-color: #f9f9f9; padding: 60px 20px; text-align: center;">
-  <h2 style="font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 700; color: #333;">Our Mission - La nostra filosofia</h2>
- <p style="font-family: 'Montserrat', sans-serif; font-size: 18px; color: #666; max-width: 800px; margin: 0 auto;">
-    La nuova frontiera del fitness è il <strong>ritorno alle radici del movimento umano</strong>. 
-<br> <strong>L’autentico benessere</strong> deriva dal rispetto profondo delle leggi del corpo. Il nostro approccio si fonda sulla <strong>naturalità</strong>, utilizzando il peso del corpo per allenare e potenziare integralmente le fasce muscolari, in modo <strong>armonioso e funzionale</strong>.
-</p>
-<p style="font-family: 'Montserrat', sans-serif; font-size: 18px; color: #666; max-width: 800px; margin: 20px auto;">
-    Le formule di allenamento che proponiamo sono ispirate alle tecniche di <strong>arti marziali</strong>, <strong>danza</strong>, <strong>yoga</strong> e <strong>functional training</strong>.
-</p>
-<p style="font-family: 'Montserrat', sans-serif; font-size: 18px; color: #666; max-width: 800px; margin: 20px auto;">
-    Ogni programma è pensato per stabilizzare e rinforzare il <strong>core</strong>, la <strong>mobilità</strong>, la <strong>resistenza</strong>, la <strong>coordinazione</strong>, la <strong>forza</strong>, e la <strong>consapevolezza corporea</strong>, rispettando sempre la <strong>fisiologia</strong>.
-</p>
 
-
-  <!-- Servizi -->
   <section id="servizi">
     <h2>Servizi Offerti</h2>
     <ul>
-      <li>
-<ul style="list-style: none; padding: 0;">
-  <li>
-    <span style="color: #E6C068; font-size: 20px;">&#9733;</span> <strong>Ambiente riservato ed esclusivo</strong> 
-  </li>
-  <li>
-    <span style="color: #E6C068; font-size: 20px;">&#9733;</span> <strong>Professionalità ed esperienza</strong> 
-  </li>
-    <span style="color: #E6C068; font-size: 20px;">&#9733;</span> <strong>Innovazione e Tradizione:</strong> Con il nostro approccio moderno al fitness, restiamo fedeli ai valori fondamentali del benessere e della personalizzazione, offrendo soluzioni all'avanguardia senza mai perdere di vista le nostre radici.
-  </li>
-  <li>
-    <span style="color: #E6C068; font-size: 20px;">&#9733;</span> <strong>Personal Training:</strong> Un programma su misura, creato dopo un'anamnesi conoscitiva, per raggiungere i tuoi obiettivi in modo sicuro ed efficace. Ogni allenamento è personalizzato in base alle tue esigenze e problematiche, per massimizzare i risultati.
-  </li>
-  <li>
-    <span style="color: #E6C068; font-size: 20px;">&#9733;</span> <strong>Corsi/Small Group:</strong> Functional Training, Animal Flow, Postural Gym, Total Body Workout & Pilates.
-     <li>
-  <span style="color: #E6C068; font-size: 20px;">&#9733;</span> <strong>Teen Workout - Allenamenti per ragazzi:</strong> Crediamo nel movimento come strumento di crescita, salute e divertimento per tutte le età. Con programmi pensati per i giovani, incoraggiamo i ragazzi a scoprire il piacere di prendersi cura del proprio corpo, sviluppando forza, coordinazione e fiducia in sé stessi, in un ambiente stimolante e positivo.
-</ul>
+      <li>⭐ <strong>Ambiente riservato ed esclusivo</strong></li>
+      <li>⭐ <strong>Professionalità ed esperienza</strong></li>
+      <li>⭐ <strong>Innovazione e Tradizione:</strong> Approccio moderno al fitness con radici solide.</li>
+      <li>⭐ <strong>Personal Training:</strong> Programmi su misura basati su anamnesi.</li>
+      <li>⭐ <strong>Corsi/Small Group:</strong> Functional Training, Animal Flow, Postural Gym, Pilates.</li>
+      <li>⭐ <strong>Teen Workout:</strong> Allenamenti per ragazzi per sviluppare forza, fiducia e salute.</li>
+    </ul>
   </section>
-  <!-- Calendario -->
-  <section id="calendario">
-  
-    <h2>Calendario Corsi</h2>
-<img src="https://i.ibb.co/0V2brMbP/Gennaio-25-2.png" alt="Calendario" style="display: block; width: 100%; height: auto; margin: auto;">
 
-         
-  <!-- Instagram -->
+  <section id="calendario">
+    <h2>Calendario Corsi</h2>
+   <img src="https://i.ibb.co/0V2brMbP/Gennaio-25-2.png" alt="Calendario" style="display: block; width: 100%; height: auto; margin: auto;">
+
+  </section>
+
   <section id="instagram">
     <h3>Seguici su Instagram</h3>
     <p><a href="https://www.instagram.com/divinefitstudio" target="_blank">Instagram @divinefitstudio</a></p>
   </section>
 
-  <!-- Contatti -->
   <section id="contatti">
     <h2>Contatti</h2>
     <p>Email: divinefitstudio@gmail.com</p>
     <p>Telefono: +39 3932011187</p>
   </section>
-<!-- Newsletter -->
-<section id="newsletter" style="background-color: #F9EFEA; padding: 40px 20px; text-align: center; border-radius: 10px;">
-  <h2 style="font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 700; color: #333;">Join the Club</h2>
-  <p style="font-family: 'Montserrat', sans-serif; font-size: 18px; color: #666;">Iscriviti alla nostra newsletter per ricevere aggiornamenti esclusivi e offerte speciali!</p>
-  <form action="https://divinefitstudio.us15.list-manage.com/subscribe/post?u=d1e4e2c9db185fd6a2961b45a&amp;id=f9d53b2980&amp;f_id=0061a1e1f0" method="POST" style="margin-top: 20px;">
-    <input type="email" name="email" placeholder="Inserisci il tuo indirizzo email" required 
-           style="font-family: 'Montserrat', sans-serif; padding: 10px; font-size: 16px; width: 80%; max-width: 400px; border: 1px solid #CCC; border-radius: 5px; margin-bottom: 10px;">
-    <br>
-    <button type="submit" 
-            style="font-family: 'Montserrat', sans-serif; background-color: #E6C068; color: white; padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer;">
-      Iscriviti
-    </button>
-  </form>
-</section>
 
+  <section id="newsletter" style="background-color: #F9EFEA; padding: 40px 20px; text-align: center; border-radius: 10px;">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 36px;">Join the Club</h2>
+    <p style="font-size: 18px;">Iscriviti alla nostra newsletter per aggiornamenti esclusivi!</p>
+    <form action="https://divinefitstudio.us15.list-manage.com/subscribe/post?u=d1e4e2c9db185fd6a2961b45a&amp;id=f9d53b2980&amp;f_id=0061a1e1f0" method="POST">
+      <input type="email" name="email" placeholder="Inserisci il tuo indirizzo email" required style="padding: 10px; font-size: 16px; width: 80%; max-width: 400px; border: 1px solid #CCC; border-radius: 5px; margin-bottom: 10px;">
+      <br>
+      <button type="submit" style="background-color: #E6C068; color: white; padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px;">Iscriviti</button>
+    </form>
+  </section>
 
+  <section id="privacy" style="padding: 60px 20px; background-color: #fff; text-align: center;">
+    <h2>Privacy Policy</h2>
+    <p style="max-width: 800px; margin: auto; font-size: 16px; color: #555;">
+      DivineFitStudio rispetta la tua privacy. I tuoi dati saranno trattati nel rispetto del Regolamento UE 2016/679 (GDPR). Utilizziamo cookie tecnici e di terze parti per migliorare l’esperienza utente. Per maggiori dettagli, contattaci via email.
+    </p>
+  </section>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 DivineFitStudio - Tutti i diritti riservati.</p>
   </footer>
 
-</body>
-</html>
-<!-- partial -->
-  
+  <!-- Cookie Banner -->
+  <div id="cookie-banner">
+    Questo sito utilizza cookie per migliorare l’esperienza utente. Navigando accetti la nostra
+    <a href="#privacy">Privacy Policy</a>.
+    <button onclick="acceptCookies()">Accetta</button>
+  </div>
+
+  <script>
+    function acceptCookies() {
+      localStorage.setItem('cookieAccepted', 'true');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    window.onload = function() {
+      if (!localStorage.getItem('cookieAccepted')) {
+        document.getElementById('cookie-banner').style.display = 'block';
+      }
+    };
+  </script>
+
 </body>
 </html>
