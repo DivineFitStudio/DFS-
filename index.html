@@ -1,261 +1,321 @@
 <!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>SITO </title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DivineFitStudio</title>
-  <link rel="icon" type="image/png" href="https://i.ibb.co/Smv7gDL/logo.png">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DivineFitStudio</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+/* GENERALE */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1.8;
+}
 
-  <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1, h2 {
-      font-family: 'Playfair Display', serif;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-    header {
-      background-color: #f1f1f1;
-      color: #333;
-      padding: 20px 0;
-      text-align: center;
-    }
-    header .logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    header .logo img {
-      max-width: 150px;
-    }
-    header nav ul {
-      list-style: none;
-      padding: 0;
-    }
-    header nav ul li {
-      display: inline;
-      margin: 0 20px;
-    }
-    header nav ul li a {
-      color: #E6C068;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    #home {
-      text-align: center;
-      padding: 60px 20px;
-    }
-    #home h1 {
-      font-size: 40px;
-      color: #333;
-    }
-    #home p {
-      font-size: 20px;
-      color: #333;
-    }
-    #home img {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 30px auto;
-    }
-    #servizi {
-      padding: 60px 20px;
-      background-color: #fff;
-      text-align: center;
-    }
-    #servizi h2 {
-      font-size: 32px;
-      color: #E6C068;
-    }
-    #servizi ul {
-      list-style-type: none;
-      padding: 0;
-      font-size: 18px;
-      text-align: left;
-      margin: 0 auto;
-      display: inline-block;
-    }
-    #servizi ul li {
-      margin-bottom: 10px;
-    }
-    #calendario {
-      background-color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    #instagram {
-      text-align: center;
-    }
-    #instagram a {
-      color: #333;
-      font-size: 18px;
-      text-decoration: none;
-    }
-    #instagram a:hover {
-      color: #E6C068;
-    }
-    footer {
-      background-color: #333;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    footer p {
-      margin: 0;
-    }
-    #contatti {
-      padding: 60px 20px;
-      background-color: #fff;
-      text-align: center;
-    }
-    #contatti h2 {
-      font-size: 32px;
-      color: #E6C068;
-    }
-    @media (max-width: 768px) {
-      header nav ul {
-        text-align: center;
-      }
-      header nav ul li {
-        display: block;
-        margin: 10px 0;
-      }
-    }
+section {
+    padding: 80px 8%;
+}
 
-    /* Cookie banner */
-    #cookie-banner {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #f1f1f1;
-      color: #333;
-      padding: 15px;
-      text-align: center;
-      font-size: 14px;
-      z-index: 9999;
-      display: none;
-    }
+h1, h2 {
+    color: #8a733e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 
-    #cookie-banner a {
-      color: #E6C068;
-      text-decoration: underline;
-    }
+h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
 
-    #cookie-banner button {
-      background-color: #E6C068;
-      color: white;
-      border: none;
-      padding: 8px 16px;
-      margin-left: 15px;
-      cursor: pointer;
-      font-weight: bold;
-      border-radius: 5px;
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+p, li {
+    font-size: 22px;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 20px 20px 10px;
+}
+
+.logo {
+    width: 320px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* NAV BUTTONS */
+.nav-buttons {
+    margin-top: 0px;
+}
+
+.nav-buttons a {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 16px 28px;
+    background: #8a733e;
+    color: #000;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-buttons a:hover {
+    opacity: 0.8;
+}
+
+/* FLEX SEZIONI */
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.flex img {
+    max-width: 100%;
+    width: 100%; /* Tutte le immagini grandi uguali */
+    max-width: 500px; /* Dimensione riferimento immagine 4 */
+}
+
+.flex-text {
+    width: 55%;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* LISTE */
+ul {
+    padding-left: 20px;
+}
+
+/* PULSANTE WHATSAPP */
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 24px 40px; /* più grande */
+    background: #8a733e; /* colore titoli */
+    color: #000;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-size: 36px; /* doppio rispetto prima */
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    opacity: 0.8;
+}
+
+/* CALENDARIO */
+.calendario {
+    text-align: center;
+}
+
+.calendario img {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* INSTAGRAM */
+.instagram {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.instagram a {
+    color: #8a733e;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.instagram-box {
+    border: 2px solid #8a733e;
+    display: inline-block;
+    padding: 20px 30px;
+    margin-top: 20px;
+}
+
+/* CONTATTI */
+.contatti {
+    text-align: center;
+}
+
+.mappa {
+    color: #d4ad51;
+    font-size: 40px; /* come titoli */
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #222;
+    font-size: 16px;
+    color: #aaa;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .flex {
+        flex-direction: column;
     }
-  </style>
+    .flex img, .flex-text{
+        width:100%;
+    }
+    h1{
+        font-size: 48px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    .whatsapp-btn {
+        font-size: 28px;
+        padding: 18px 30px;
+    }
+    .mappa {
+        font-size: 32px;
+    }
+}
+</style>
 </head>
 <body>
 
-  <header>
-    <div class="logo">
-      <img src="https://i.ibb.co/vq6wpyR/logo-2.png" alt="DivineFitStudio">
+<div class="header">
+    <img src="https://i.ibb.co/pv3rxHGN/logo-bianco-max-quality.png" class="logo">
+
+    <!-- Pulsanti nav attaccati al logo -->
+    <div class="nav-buttons">
+        <a href="#come">COME LAVORIAMO</a>
+        <a href="#filosofia">LA NOSTRA FILOSOFIA</a>
+        <a href="#calendario">CALENDARIO CORSI</a>
+        <a href="#contatti">CONTATTI</a>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#servizi">Servizi</a></li>
-        <li><a href="#calendario">Calendario</a></li>
-        <li><a href="#contatti">Contatti</a></li>
-        <li><a href="#privacy">Privacy Policy</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section id="home">
-    <h1>DivineFitStudio</h1>
-    <p>Studio di Personal Training e Small Group in Centro a Bolzano.</p>
-    <img src="https://i.ibb.co/W5P3Qs5/foto-website.png" alt="foto-website">
-  </section>
+    <!-- IMMAGINE 1 - SPECIALISTI DOPPIO -->
+    <img src="https://i.ibb.co/JFSc5QDY/Progetto-senza-titolo-4.png" style="width:12cm; margin-top:20px;">
+</div>
 
-  <section id="servizi">
-    <h2>Servizi Offerti</h2>
-    <ul>
-      <li>⭐ <strong>Ambiente riservato ed esclusivo</strong></li>
-      <li>⭐ <strong>Professionalità ed esperienza</strong></li>
-      <li>⭐ <strong>Innovazione e Tradizione:</strong> Approccio moderno al fitness con radici solide.</li>
-      <li>⭐ <strong>Personal Training:</strong> Programmi su misura basati su anamnesi.</li>
-      <li>⭐ <strong>Corsi/Small Group:</strong> Functional Training, Animal Flow, Postural Gym, Pilates.</li>
-      <li>⭐ <strong>Teen Workout:</strong> Allenamenti per ragazzi per sviluppare forza, fiducia e salute.</li>
-    </ul>
-  </section>
+<section id="come">
+    <!-- IMMAGINE 2 - COME LAVORIAMO con immagine di prima LA NOSTRA FILOSOFIA -->
+    <div class="flex">
+        <img src="https://i.ibb.co/QFm45Xjg/HOME-1.png">
+        <div class="flex-text">
+            <h2>COME LAVORIAMO E PERCHÉ FUNZIONA</h2>
+            <p>In DivineFitStudio alleniamo il corpo nella sua totalità, senza macchinari. Ogni seduta è pensata per rinforzare tutto il corpo, migliorare postura, equilibrio, mobilità e qualità del movimento nella vita quotidiana. Gli allenamenti sono personalizzati e dinamici, basati su forza, coordinazione, equilibrio e resistenza, con l’utilizzo di attrezzi funzionali e versatili. Crediamo che un corpo che funziona bene dall’interno sviluppi naturalmente anche benefici estetici. L’attenzione è sempre sulla persona: movimento consapevole, tecnica corretta e risultati duraturi.</p>
+        </div>
+    </div>
 
-  <section id="calendario">
-    <h2>Calendario Corsi</h2>
-  <img src="https://i.ibb.co/jPs1rpR6/Gennaio-25-4.png" alt="Gennaio-25-4" style="display: block; width: 100%; height: auto; margin: auto;">
+    <!-- IMMAGINE 3 - LA NOSTRA FILOSOFIA spostata sopra SIAMO IL POSTO GIUSTO -->
+    <div class="flex">
+        <img src="https://i.ibb.co/39zzqDbK/bb5a166ed547564afc01348ee2704f48.jpg">
+        <div class="flex-text">
+            <h2>LA NOSTRA FILOSOFIA</h2>
+            <p>DivineFitStudio nasce dalla convinzione che il corpo sia qualcosa di prezioso e meriti di essere allenato con rispetto, consapevolezza e attenzione al movimento naturale. Ogni corpo è unico e racchiude un grande potenziale: il nostro impegno è aiutarti a esprimerlo al meglio. Lavoriamo sulla funzionalità interna del corpo, perché quando il corpo funziona bene, tutto il resto segue naturalmente. Il nostro nome riflette ciò in cui crediamo: ogni corpo è “divino” nella sua unicità. Il nostro lavoro è guidarti a riscoprirlo attraverso movimento funzionale, forza controllata e una postura corretta.</p>
+        </div>
+    </div>
 
-  </section>
+    <!-- IMMAGINE 4 - SIAMO IL POSTO GIUSTO -->
+    <div class="flex reverse">
+        <img src="https://i.ibb.co/Y7QXGxXG/HOME-4.png">
+        <div class="flex-text">
+            <h2>SIAMO IL POSTO GIUSTO PER TE SE…</h2>
+            <ul>
+                <li>Hai scoliosi o problematiche posturali</li>
+                <li>Soffri di dolori cronici</li>
+                <li>Hai bisogno di riabilitazione post-traumatica</li>
+                <li>Sei sedentario/a</li>
+                <li>Vuoi allenarti in sicurezza</li>
+                <li>Sei in gravidanza o post-gravidanza</li>
+                <li>Vuoi perdere peso o aumentare massa</li>
+                <li>Sei un atleta/agonista</li>
+            </ul>
 
-  <section id="instagram">
-    <h3>Seguici su Instagram</h3>
-    <p><a href="https://www.instagram.com/divinefitstudio" target="_blank">Instagram @divinefitstudio</a></p>
-  </section>
+            <h2>NON SIAMO IL POSTO GIUSTO SE…</h2>
+            <ul>
+                <li>Cerchi soluzioni rapide senza impegno</li>
+                <li>Preferisci grandi sale affollate</li>
+                <li>Ti interessa solo l’estetica</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
-  <section id="contatti">
-    <h2>Contatti</h2>
+<!-- IMMAGINE 5 - PILATES -->
+<section id="filosofia">
+    <div class="flex">
+        <img src="https://i.ibb.co/PzbfNHKk/HOME-5.png">
+        <div class="flex-text">
+            <h2>PILATES</h2>
+            <p>Il nostro Pilates si basa sull’equilibrio tra rafforzamento e allungamento, attraverso esercizi statici, dinamici e di decompressione che si integrano in modo fluido. L’attenzione è rivolta ai muscoli profondi e stabilizzatori, fondamentali per postura corretta e movimento efficiente. È il metodo ideale per chi desidera consapevolezza corporea, forza funzionale e benessere duraturo.</p>
+        </div>
+    </div>
+
+    <!-- TASTO WHATSAPP -->
+    <center>
+        <a class="whatsapp-btn" href="https://wa.me/3932011187?text=Buongiorno,%20sono%20interessato%20al%20vostro%20studio.%20Potrei%20avere%20maggiori%20informazioni?" target="_blank">
+            PRENOTA ORA IL TUO COLLOQUIO - WHATSAPP
+        </a>
+    </center>
+</section>
+
+<section id="calendario" class="calendario">
+    <h2>CALENDARIO CORSI</h2>
+    <img src="https://i.ibb.co/Y4JhLdf0/Gennaio-25-9.png">
+</section>
+
+<section class="instagram">
+    <h2>SEGUICI SU INSTAGRAM</h2>
+    <div class="instagram-box">
+        <a href="https://www.instagram.com/divinefitstudio/" target="_blank">Instagram @divinefitstudio</a>
+    </div>
+</section>
+
+<section id="contatti" class="contatti">
+    <h2>CONTATTI</h2>
     <p>Email: divinefitstudio@gmail.com</p>
     <p>Telefono: +39 3932011187</p>
-  </section>
+    <p><a class="mappa" href="https://www.google.com/maps?q=Via+dei+Vanga+12/B+Bolzano" target="_blank">📍 Via dei Vanga 12/B – Bolzano</a></p>
+</section>
 
-  <section id="newsletter" style="background-color: #F9EFEA; padding: 40px 20px; text-align: center; border-radius: 10px;">
-    <h2 style="font-family: 'Playfair Display', serif; font-size: 36px;">Join the Club</h2>
-    <p style="font-size: 18px;">Iscriviti alla nostra newsletter per aggiornamenti esclusivi!</p>
-    <form action="https://divinefitstudio.us15.list-manage.com/subscribe/post?u=d1e4e2c9db185fd6a2961b45a&amp;id=f9d53b2980&amp;f_id=0061a1e1f0" method="POST">
-      <input type="email" name="email" placeholder="Inserisci il tuo indirizzo email" required style="padding: 10px; font-size: 16px; width: 80%; max-width: 400px; border: 1px solid #CCC; border-radius: 5px; margin-bottom: 10px;">
-      <br>
-      <button type="submit" style="background-color: #E6C068; color: white; padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px;">Iscriviti</button>
-    </form>
-  </section>
-
-  <section id="privacy" style="padding: 60px 20px; background-color: #fff; text-align: center;">
-    <h2>Privacy Policy</h2>
-    <p style="max-width: 800px; margin: auto; font-size: 16px; color: #555;">
-      DivineFitStudio rispetta la tua privacy. I tuoi dati saranno trattati nel rispetto del Regolamento UE 2016/679 (GDPR). Utilizziamo cookie tecnici e di terze parti per migliorare l’esperienza utente. Per maggiori dettagli, contattaci via email.
-    </p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 DivineFitStudio - Tutti i diritti riservati.</p>
-  </footer>
-
-  <!-- Cookie Banner -->
-  <div id="cookie-banner">
-    Questo sito utilizza cookie per migliorare l’esperienza utente. Navigando accetti la nostra
-    <a href="#privacy">Privacy Policy</a>.
-    <button onclick="acceptCookies()">Accetta</button>
-  </div>
-
-  <script>
-    function acceptCookies() {
-      localStorage.setItem('cookieAccepted', 'true');
-      document.getElementById('cookie-banner').style.display = 'none';
-    }
-
-    window.onload = function() {
-      if (!localStorage.getItem('cookieAccepted')) {
-        document.getElementById('cookie-banner').style.display = 'block';
-      }
-    };
-  </script>
+<footer>
+    <p><strong>Privacy Policy</strong><br> DivineFitStudio rispetta la tua privacy. Dati trattati secondo GDPR.</p>
+    <p>© 2026 DivineFitStudio - Tutti i diritti riservati.</p>
+</footer>
 
 </body>
+</html>
+    
+  </body>
+  
 </html>
