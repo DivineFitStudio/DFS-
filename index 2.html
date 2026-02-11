@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DivineFitStudio</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+/* GENERALE */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1.8;
+}
+
+section {
+    padding: 80px 8%;
+}
+
+h1, h2 {
+    color: #8a733e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+p, li {
+    font-size: 22px;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 20px 20px 10px;
+}
+
+.logo {
+    width: 320px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* NAV BUTTONS */
+.nav-buttons {
+    margin-top: 0px;
+}
+
+.nav-buttons a {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 16px 28px;
+    background: #8a733e;
+    color: #000;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-buttons a:hover {
+    opacity: 0.8;
+}
+
+/* FLEX SEZIONI */
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.flex img {
+    max-width: 100%;
+    width: 100%; /* Tutte le immagini grandi uguali */
+    max-width: 500px; /* Dimensione riferimento immagine 4 */
+}
+
+.flex-text {
+    width: 55%;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* LISTE */
+ul {
+    padding-left: 20px;
+}
+
+/* PULSANTE WHATSAPP */
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 24px 40px; /* più grande */
+    background: #8a733e; /* colore titoli */
+    color: #000;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-size: 36px; /* doppio rispetto prima */
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    opacity: 0.8;
+}
+
+/* CALENDARIO */
+.calendario {
+    text-align: center;
+}
+
+.calendario img {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* INSTAGRAM */
+.instagram {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.instagram a {
+    color: #8a733e;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.instagram-box {
+    border: 2px solid #8a733e;
+    display: inline-block;
+    padding: 20px 30px;
+    margin-top: 20px;
+}
+
+/* CONTATTI */
+.contatti {
+    text-align: center;
+}
+
+.mappa {
+    color: #d4ad51;
+    font-size: 40px; /* come titoli */
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #222;
+    font-size: 16px;
+    color: #aaa;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .flex {
+        flex-direction: column;
+    }
+    .flex img, .flex-text{
+        width:100%;
+    }
+    h1{
+        font-size: 48px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    .whatsapp-btn {
+        font-size: 28px;
+        padding: 18px 30px;
+    }
+    .mappa {
+        font-size: 32px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <img src="https://i.ibb.co/pv3rxHGN/logo-bianco-max-quality.png" class="logo">
+
+    <!-- Pulsanti nav attaccati al logo -->
+    <div class="nav-buttons">
+        <a href="#come">COME LAVORIAMO</a>
+        <a href="#filosofia">LA NOSTRA FILOSOFIA</a>
+        <a href="#calendario">CALENDARIO CORSI</a>
+        <a href="#contatti">CONTATTI</a>
+    </div>
+
+    <!-- IMMAGINE 1 - SPECIALISTI DOPPIO -->
+    <img src="https://i.ibb.co/JFSc5QDY/Progetto-senza-titolo-4.png" style="width:12cm; margin-top:20px;">
+</div>
+
+<section id="come">
+    <!-- IMMAGINE 2 - COME LAVORIAMO con immagine di prima LA NOSTRA FILOSOFIA -->
+    <div class="flex">
+        <img src="https://i.ibb.co/QFm45Xjg/HOME-1.png">
+        <div class="flex-text">
+            <h2>COME LAVORIAMO E PERCHÉ FUNZIONA</h2>
+            <p>In DivineFitStudio alleniamo il corpo nella sua totalità, senza macchinari. Ogni seduta è pensata per rinforzare tutto il corpo, migliorare postura, equilibrio, mobilità e qualità del movimento nella vita quotidiana. Gli allenamenti sono personalizzati e dinamici, basati su forza, coordinazione, equilibrio e resistenza, con l’utilizzo di attrezzi funzionali e versatili. Crediamo che un corpo che funziona bene dall’interno sviluppi naturalmente anche benefici estetici. L’attenzione è sempre sulla persona: movimento consapevole, tecnica corretta e risultati duraturi.</p>
+        </div>
+    </div>
+
+    <!-- IMMAGINE 3 - LA NOSTRA FILOSOFIA spostata sopra SIAMO IL POSTO GIUSTO -->
+    <div class="flex">
+        <img src="https://i.ibb.co/39zzqDbK/bb5a166ed547564afc01348ee2704f48.jpg">
+        <div class="flex-text">
+            <h2>LA NOSTRA FILOSOFIA</h2>
+            <p>DivineFitStudio nasce dalla convinzione che il corpo sia qualcosa di prezioso e meriti di essere allenato con rispetto, consapevolezza e attenzione al movimento naturale. Ogni corpo è unico e racchiude un grande potenziale: il nostro impegno è aiutarti a esprimerlo al meglio. Lavoriamo sulla funzionalità interna del corpo, perché quando il corpo funziona bene, tutto il resto segue naturalmente. Il nostro nome riflette ciò in cui crediamo: ogni corpo è “divino” nella sua unicità. Il nostro lavoro è guidarti a riscoprirlo attraverso movimento funzionale, forza controllata e una postura corretta.</p>
+        </div>
+    </div>
+
+    <!-- IMMAGINE 4 - SIAMO IL POSTO GIUSTO -->
+    <div class="flex reverse">
+        <img src="https://i.ibb.co/Y7QXGxXG/HOME-4.png">
+        <div class="flex-text">
+            <h2>SIAMO IL POSTO GIUSTO PER TE SE…</h2>
+            <ul>
+                <li>Hai scoliosi o problematiche posturali</li>
+                <li>Soffri di dolori cronici</li>
+                <li>Hai bisogno di riabilitazione post-traumatica</li>
+                <li>Sei sedentario/a</li>
+                <li>Vuoi allenarti in sicurezza</li>
+                <li>Sei in gravidanza o post-gravidanza</li>
+                <li>Vuoi perdere peso o aumentare massa</li>
+                <li>Sei un atleta/agonista</li>
+            </ul>
+
+            <h2>NON SIAMO IL POSTO GIUSTO SE…</h2>
+            <ul>
+                <li>Cerchi soluzioni rapide senza impegno</li>
+                <li>Preferisci grandi sale affollate</li>
+                <li>Ti interessa solo l’estetica</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- IMMAGINE 5 - PILATES -->
+<section id="filosofia">
+    <div class="flex">
+        <img src="https://i.ibb.co/PzbfNHKk/HOME-5.png">
+        <div class="flex-text">
+            <h2>PILATES</h2>
+            <p>Il nostro Pilates si basa sull’equilibrio tra rafforzamento e allungamento, attraverso esercizi statici, dinamici e di decompressione che si integrano in modo fluido. L’attenzione è rivolta ai muscoli profondi e stabilizzatori, fondamentali per postura corretta e movimento efficiente. È il metodo ideale per chi desidera consapevolezza corporea, forza funzionale e benessere duraturo.</p>
+        </div>
+    </div>
+
+    <!-- TASTO WHATSAPP -->
+    <center>
+        <a class="whatsapp-btn" href="https://wa.me/3932011187?text=Buongiorno,%20sono%20interessato%20al%20vostro%20studio.%20Potrei%20avere%20maggiori%20informazioni?" target="_blank">
+            PRENOTA ORA IL TUO COLLOQUIO - WHATSAPP
+        </a>
+    </center>
+</section>
+
+<section id="calendario" class="calendario">
+    <h2>CALENDARIO CORSI</h2>
+    <img src="https://i.ibb.co/Y4JhLdf0/Gennaio-25-9.png">
+</section>
+
+<section class="instagram">
+    <h2>SEGUICI SU INSTAGRAM</h2>
+    <div class="instagram-box">
+        <a href="https://www.instagram.com/divinefitstudio/" target="_blank">Instagram @divinefitstudio</a>
+    </div>
+</section>
+
+<section id="contatti" class="contatti">
+    <h2>CONTATTI</h2>
+    <p>Email: divinefitstudio@gmail.com</p>
+    <p>Telefono: +39 3932011187</p>
+    <p><a class="mappa" href="https://www.google.com/maps?q=Via+dei+Vanga+12/B+Bolzano" target="_blank">📍 Via dei Vanga 12/B – Bolzano</a></p>
+</section>
+
+<footer>
+    <p><strong>Privacy Policy</strong><br> DivineFitStudio rispetta la tua privacy. Dati trattati secondo GDPR.</p>
+    <p>© 2026 DivineFitStudio - Tutti i diritti riservati.</p>
+</footer>
+
+</body>
+</html>
